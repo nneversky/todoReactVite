@@ -20,8 +20,10 @@ const todoSlice = createSlice({
       state.tasks = newTasks;
     },
     resetTask(state, action) {
-      const [id, newTask] = action.payload;
+      let [id, newTask] = action.payload;
       const newTasks = state.tasks.map((value) => {
+        if (value.id === id && newTask.trim() === "") throw Error("Empty str");
+
         if (value.id === id && newTask.trim() !== "") value.text = newTask;
 
         return value;
