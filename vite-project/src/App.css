@@ -5,12 +5,11 @@
   text-align: center;
 }
 
+
 .listGroup {
  text-align: right;
 }
 
-.group {
-  display: flex;
-  justify-content: center;
-  margin: 2%;
+.btnWhite {
+  mask-image: white;
 }

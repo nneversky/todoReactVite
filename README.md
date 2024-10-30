@@ -1,1 +1,3 @@
-# todoVite
+### todoVite
+
+JS + Vite + Redux Toolkit
